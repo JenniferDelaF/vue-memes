@@ -59,7 +59,7 @@ export default createStore({
   actions: {
     async getPokemons({commit}){
       try{
-        const response = await fetch("https://raw.githubusercontent.com/robert-z/simple-pokemon-json-api/master/data/pokemon.json");
+        const response = await fetch("https://raw.githubusercontent.com/JenniferDelaF/vue-memes/main/animales.json");
         const result = await response.json();
         commit("setPokemons", result);
         console.log("Mis pokemons");

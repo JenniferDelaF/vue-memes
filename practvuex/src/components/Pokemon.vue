@@ -1,10 +1,9 @@
 <template>
 	<div class="col-4 card">
-		<img class="card-img-top" :src="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+ pokemon.num + '.png'"/>
-
+		<img class="card-img-top" :src="props.pokemon.foto"/>
 		<div class="card-body">
-			<h5 class="card-title">{{ props.pokemon.variations[0].name }}</h5>
-			<p class="card-text">{{ props.pokemon.variations[0].description }}</p>
+			<h5 class="card-title">{{ props.pokemon.nombre }}</h5>
+			<p class="card-text">{{ props.pokemon.descripcion }}</p>
 			<a :href="props.pokemon.link" class="btn btn-primary">Descripción</a>
 		</div>
 	</div>
